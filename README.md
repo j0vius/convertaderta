@@ -1,6 +1,6 @@
 # convertaderta
 
-Native macOS app that converts djay Pro CSV playlist exports into M3U8 playlists for Apple Music import.
+Cross-platform app (macOS + Windows) that converts djay Pro CSV playlist exports into M3U8 playlists for Apple Music import.
 
 ## Why this exists
 
@@ -10,12 +10,51 @@ djay Pro can export playlists as CSV but cannot re-import them. This app convert
 
 ## Requirements
 
+### macOS
 - macOS 13 or later
 - Xcode 15+ (to build)
 - Apple Music app installed
-- For catalog streaming track matching: Apple Music subscription + authorization
+
+### Windows
+- Windows 10 or later
+- [Apple Music for Windows](https://www.apple.com/itunes/) installed (for library lookup + playlist import)
+- No Python required if you use the release `.exe`
+
+## Download
+
+| Platform | File |
+|----------|------|
+| macOS | [convertaderta.dmg](https://github.com/j0vius/convertaderta/releases/latest) |
+| Windows | [convertaderta-windows.zip](https://github.com/j0vius/convertaderta/releases/latest) |
 
 ## Build
+
+### Windows release (.exe)
+
+Built automatically by GitHub Actions, or locally on Windows:
+
+```powershell
+cd ~\Projects\DjayPlaylistBridge
+.\Scripts\build_windows.ps1
+```
+
+Output:
+
+- `dist\windows\convertaderta.exe`
+- `dist\convertaderta-windows.zip`
+
+Run without installing Python:
+
+```powershell
+.\dist\windows\convertaderta.exe
+```
+
+### Cross-platform Python app (dev)
+
+```bash
+cd ~/Projects/DjayPlaylistBridge
+PYTHONPATH=python python3 python/app.py
+```
 
 ### Standalone release + DMG (for copying to another Mac)
 
@@ -70,6 +109,8 @@ xcodebuild -scheme DjayPlaylistBridge -configuration Debug test
 
 ## Usage
 
+Same workflow on macOS and Windows:
+
 ### 1. Export from djay Pro
 
 In djay Pro: open a playlist in **My Collection** → menu → **Export as CSV File…**
@@ -84,23 +125,14 @@ In djay Pro: open a playlist in **My Collection** → menu → **Export as CSV F
 
 ### 3. Import into Apple Music
 
-The app can trigger this automatically. You can also do it manually:
+Click **Import to Apple Music** in the app, or import manually:
 
-- **File → Library → Import Playlist** in Music.app, or
-- drag the `.m3u8` file into Music
+- **macOS:** File → Library → Import Playlist in Music.app, or drag the `.m3u8` into Music
+- **Windows:** drag the `.m3u8` into Apple Music for Windows, or use the in-app import button
 
 ### 4. Bring playlist into djay Pro
 
 Open djay Pro and **drag** the imported playlist from Music/Local Files into **My Collection**.
-
-## Streaming tracks
-
-Tracks without a `file://` URL are marked **Streaming**. After conversion:
-
-1. Click **Match Streaming Tracks** to search your Music library via AppleScript
-2. If enabled, unmatched tracks are then searched in the Apple Music catalog via MusicKit
-
-Catalog matching requires Apple Music authorization and an active subscription.
 
 ## CSV format
 
@@ -129,13 +161,16 @@ If your CSV uses `ipod-library://` URLs (common for tracks added via Apple Music
 ## Project structure
 
 ```
-DjayPlaylistBridge/
-├── DjayPlaylistBridge/          # App sources
+convertaderta/
+├── DjayPlaylistBridge/          # macOS SwiftUI app sources
+├── python/                      # Cross-platform Python app (Windows .exe)
 ├── DjayPlaylistBridgeTests/     # Unit tests + CSV fixtures
+├── .github/workflows/           # Windows CI build
 ├── Scripts/
-│   ├── build_release.sh         # Release .app build
+│   ├── build_release.sh         # macOS .app build
+│   ├── build_windows.ps1        # Windows .exe build
 │   ├── create_dmg.sh            # Package .app into .dmg
-│   └── release.sh               # Build + DMG in one step
+│   └── release.sh               # macOS build + DMG
 ├── dist/                        # Release output (gitignored)
 └── README.md
 ```
