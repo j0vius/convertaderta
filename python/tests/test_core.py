@@ -1,3 +1,4 @@
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -44,13 +45,13 @@ class CoreTests(unittest.TestCase):
                 resolved_path="/tmp/song.mp3",
             )
         ]
-        output = Path("/tmp/convertaderta-test.m3u8")
-        result = M3u8Writer().write(tracks, str(output))
-        self.assertEqual(result.resolved_count, 1)
-        body = output.read_text(encoding="utf-8")
-        self.assertIn("#EXTM3U", body)
-        self.assertIn("/tmp/song.mp3", body)
-        output.unlink(missing_ok=True)
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output = Path(temp_dir) / "convertaderta-test.m3u8"
+            result = M3u8Writer().write(tracks, str(output))
+            self.assertEqual(result.resolved_count, 1)
+            body = output.read_text(encoding="utf-8")
+            self.assertIn("#EXTM3U", body)
+            self.assertIn("/tmp/song.mp3", body)
 
 
 if __name__ == "__main__":
