@@ -63,7 +63,7 @@
 		A20000010000000000000010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20000010000000000000011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20000010000000000000012 /* DjayPlaylistBridge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DjayPlaylistBridge.entitlements; sourceTree = "<group>"; };
-		A20000010000000000000013 /* DjayPlaylistBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DjayPlaylistBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000010000000000000013 /* convertaderta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = convertaderta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000020000000000000001 /* CsvParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvParserTests.swift; sourceTree = "<group>"; };
 		A20000020000000000000002 /* TrackResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResolverTests.swift; sourceTree = "<group>"; };
 		A20000020000000000000003 /* M3u8WriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3u8WriterTests.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		A60000010000000000000003 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A20000010000000000000013 /* DjayPlaylistBridge.app */,
+				A20000010000000000000013 /* convertaderta.app */,
 				A20000020000000000000004 /* DjayPlaylistBridgeTests.xctest */,
 			);
 			name = Products;
@@ -192,8 +192,8 @@
 			dependencies = (
 			);
 			name = DjayPlaylistBridge;
-			productName = DjayPlaylistBridge;
-			productReference = A20000010000000000000013 /* DjayPlaylistBridge.app */;
+			productName = convertaderta;
+			productReference = A20000010000000000000013 /* convertaderta.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A40000020000000000000001 /* DjayPlaylistBridgeTests */ = {
@@ -379,7 +379,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.djayplaylistbridge.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = convertaderta;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -406,7 +406,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.djayplaylistbridge.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = convertaderta;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -426,7 +426,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DjayPlaylistBridge.app/Contents/MacOS/DjayPlaylistBridge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/convertaderta.app/Contents/MacOS/convertaderta";
 			};
 			name = Debug;
 		};
@@ -444,7 +444,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DjayPlaylistBridge.app/Contents/MacOS/DjayPlaylistBridge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/convertaderta.app/Contents/MacOS/convertaderta";
 			};
 			name = Release;
 		};

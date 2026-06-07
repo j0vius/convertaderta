@@ -60,11 +60,18 @@ struct ContentView: View {
     }
 
     private var header: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text("DjayPlaylistBridge")
-                .font(.largeTitle.bold())
-            Text("Convert djay Pro CSV playlists to M3U8 for local music files.")
-                .foregroundStyle(.secondary)
+        HStack(alignment: .center, spacing: 14) {
+            Image("AppMascot")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 56, height: 56)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("convertaderta")
+                    .font(.largeTitle.bold())
+                Text("Convert djay Pro CSV playlists to M3U8 for local music files.")
+                    .foregroundStyle(.secondary)
+            }
         }
     }
 

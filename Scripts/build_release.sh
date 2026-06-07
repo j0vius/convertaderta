@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 DIST_DIR="$ROOT_DIR/dist"
 DERIVED_DATA="$DIST_DIR/DerivedData"
-APP_NAME="DjayPlaylistBridge"
+APP_NAME="convertaderta"
 SCHEME="DjayPlaylistBridge"
 PROJECT="$ROOT_DIR/DjayPlaylistBridge.xcodeproj"
 

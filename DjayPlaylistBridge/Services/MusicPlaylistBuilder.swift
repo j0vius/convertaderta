@@ -13,8 +13,8 @@ enum MusicPlaylistBuilderError: LocalizedError {
             return "The M3U8 file contains no playable file paths."
         case .accessDenied:
             return """
-            Allow DjayPlaylistBridge to control Music:
-            System Settings → Privacy & Security → Automation → enable Music for DjayPlaylistBridge.
+            Allow convertaderta to control Music:
+            System Settings → Privacy & Security → Automation → enable Music for convertaderta.
             Then quit and reopen the app.
             """
         }

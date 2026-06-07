@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 DIST_DIR="$ROOT_DIR/dist"
-APP_NAME="DjayPlaylistBridge"
+APP_NAME="convertaderta"
 APP_PATH="$DIST_DIR/${APP_NAME}.app"
 DMG_PATH="$DIST_DIR/${APP_NAME}.dmg"
 VOLUME_NAME="$APP_NAME"

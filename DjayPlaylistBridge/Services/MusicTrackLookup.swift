@@ -8,8 +8,8 @@ enum MusicTrackLookupError: LocalizedError {
         switch self {
         case .accessDenied:
             return """
-            Allow DjayPlaylistBridge to control Music:
-            System Settings → Privacy & Security → Automation → enable Music for DjayPlaylistBridge.
+            Allow convertaderta to control Music:
+            System Settings → Privacy & Security → Automation → enable Music for convertaderta.
             Then quit and reopen the app.
             """
         case .scriptFailed(let detail):

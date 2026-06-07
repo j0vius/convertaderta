@@ -1,4 +1,4 @@
-# DjayPlaylistBridge
+# convertaderta
 
 Native macOS app that converts djay Pro CSV playlist exports into M3U8 playlists for Apple Music import.
 
@@ -29,15 +29,15 @@ chmod +x Scripts/*.sh
 
 This produces:
 
-- `dist/DjayPlaylistBridge.app` — standalone app, no Xcode/Swift needed to run
-- `dist/DjayPlaylistBridge.dmg` — drag-and-drop installer for another Mac
+- `dist/convertaderta.app` — standalone app, no Xcode/Swift needed to run
+- `dist/convertaderta.dmg` — drag-and-drop installer for another Mac
 
-On the target Mac: open the DMG → drag **DjayPlaylistBridge** to **Applications** → launch.
+On the target Mac: open the DMG → drag **convertaderta** to **Applications** → launch.
 
 **First launch on another Mac:** if macOS blocks the app (unsigned build), right-click the app → **Open**, or run:
 
 ```bash
-xattr -cr /Applications/DjayPlaylistBridge.app
+xattr -cr /Applications/convertaderta.app
 ```
 
 The target Mac still needs **macOS 13+**, **Apple Music**, and **djay Pro** for the full playlist round-trip. It does **not** need Xcode or developer tools.
@@ -76,7 +76,7 @@ In djay Pro: open a playlist in **My Collection** → menu → **Export as CSV F
 
 ### 2. Convert
 
-1. Launch DjayPlaylistBridge
+1. Launch convertaderta
 2. Drop the CSV onto the window (or **File → Open CSV…**)
 3. Review the track preview (Resolved / Missing / Streaming)
 4. Click **Convert**
