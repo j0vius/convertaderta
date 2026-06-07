@@ -163,10 +163,31 @@ struct ContentView: View {
     }
 
     func importToMusic(_ url: URL) {
-        do {
-            try musicBuilder.importPlaylist(at: url)
-        } catch {
-            errorMessage = error.localizedDescription
+        errorMessage = nil
+        isConverting = true
+        conversionProgress = ConversionProgress(
+            phase: .importingToMusic,
+            current: 0,
+            total: 0,
+            detail: "Adding tracks to a new playlist in Music…"
+        )
+
+        let builder = musicBuilder
+
+        Task.detached {
+            do {
+                try builder.importPlaylist(at: url)
+                await MainActor.run {
+                    conversionProgress = nil
+                    isConverting = false
+                }
+            } catch {
+                await MainActor.run {
+                    conversionProgress = nil
+                    isConverting = false
+                    errorMessage = error.localizedDescription
+                }
+            }
         }
     }
 }

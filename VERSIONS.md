@@ -11,7 +11,7 @@ Working baseline for CSV → M3U8 conversion:
 - Local folder scan (`Documents/music /Djay`, `Documents/music`)
 - M3U8 export with resolved local paths
 
-**Known limitation:** “Import to Apple Music” button does not work in this tag (Music.app has no `import` AppleScript command for M3U8). Use **File → Library → Import Playlist** in Music, or drag the `.m3u8` into Music manually.
+**Known limitation in v1 only:** “Import to Apple Music” was broken (Music.app has no `import` AppleScript for M3U8). Fixed on `main` after this tag.
 
 ### Restore v1
 

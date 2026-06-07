@@ -6,6 +6,7 @@ struct ConversionProgress: Equatable {
         case scanningLocal
         case matchingMusic
         case writing
+        case importingToMusic
     }
 
     let phase: Phase
@@ -23,6 +24,8 @@ struct ConversionProgress: Equatable {
             return "Matching in Apple Music"
         case .writing:
             return "Writing playlist"
+        case .importingToMusic:
+            return "Importing to Apple Music"
         }
     }
 
@@ -35,7 +38,7 @@ struct ConversionProgress: Equatable {
         case .matchingMusic:
             guard total > 0 else { return nil }
             return "\(current) of \(total)"
-        case .writing:
+        case .writing, .importingToMusic:
             return nil
         }
     }
@@ -52,6 +55,8 @@ struct ConversionProgress: Equatable {
             return 0.30 + (Double(current) / Double(total)) * 0.65
         case .writing:
             return 0.98
+        case .importingToMusic:
+            return 0.5
         }
     }
 

@@ -45,6 +45,8 @@ struct ConversionProgressBarView: View {
             return "music.note"
         case .writing:
             return "square.and.arrow.down"
+        case .importingToMusic:
+            return "music.note.list"
         }
     }
 }
