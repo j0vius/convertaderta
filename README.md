@@ -19,6 +19,7 @@ djay Pro can export playlists as CSV but cannot re-import them. This app convert
 - Windows 10 or later
 - [Apple Music for Windows](https://www.apple.com/itunes/) installed (for library lookup + playlist import)
 - No Python required if you use the release `.exe`
+- not fully tested but should work 
 
 ## Download
 
