@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000010000000000000001 /* DjayPlaylistBridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* DjayPlaylistBridgeApp.swift */; };
+		A10000010000000000000002 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000002 /* AppModel.swift */; };
+		A10000010000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000003 /* ContentView.swift */; };
+		A10000010000000000000004 /* DjayTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000004 /* DjayTrack.swift */; };
+		A10000010000000000000005 /* ConversionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000005 /* ConversionResult.swift */; };
+		A10000010000000000000006 /* DurationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000006 /* DurationParser.swift */; };
+		A10000010000000000000007 /* DjayCsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000007 /* DjayCsvParser.swift */; };
+		A10000010000000000000008 /* TrackResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000008 /* TrackResolver.swift */; };
+		A10000010000000000000009 /* M3u8Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000009 /* M3u8Writer.swift */; };
+		A1000001000000000000000A /* MusicPlaylistBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000A /* MusicPlaylistBuilder.swift */; };
+		A1000001000000000000000C /* PlaylistConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000C /* PlaylistConverter.swift */; };
+		A10000010000000000000012 /* LocalMusicIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000015 /* LocalMusicIndex.swift */; };
+		A10000010000000000000013 /* MusicTrackLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000016 /* MusicTrackLookup.swift */; };
+		A1000001000000000000000D /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000D /* DropZoneView.swift */; };
+		A1000001000000000000000E /* TrackPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000E /* TrackPreviewView.swift */; };
+		A1000001000000000000000F /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000F /* ResultsView.swift */; };
+		A10000010000000000000014 /* ConversionProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000017 /* ConversionProgress.swift */; };
+		A10000010000000000000015 /* ConversionProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000018 /* ConversionProgressBarView.swift */; };
+		A10000010000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000010 /* Assets.xcassets */; };
+		A10000020000000000000001 /* CsvParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000001 /* CsvParserTests.swift */; };
+		A10000020000000000000002 /* TrackResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000002 /* TrackResolverTests.swift */; };
+		A10000020000000000000003 /* M3u8WriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000003 /* M3u8WriterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A30000020000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A30000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A40000010000000000000001;
+			remoteInfo = DjayPlaylistBridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20000010000000000000001 /* DjayPlaylistBridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjayPlaylistBridgeApp.swift; sourceTree = "<group>"; };
+		A20000010000000000000002 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A20000010000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20000010000000000000004 /* DjayTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjayTrack.swift; sourceTree = "<group>"; };
+		A20000010000000000000005 /* ConversionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionResult.swift; sourceTree = "<group>"; };
+		A20000010000000000000006 /* DurationParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationParser.swift; sourceTree = "<group>"; };
+		A20000010000000000000007 /* DjayCsvParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjayCsvParser.swift; sourceTree = "<group>"; };
+		A20000010000000000000008 /* TrackResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResolver.swift; sourceTree = "<group>"; };
+		A20000010000000000000009 /* M3u8Writer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3u8Writer.swift; sourceTree = "<group>"; };
+		A2000001000000000000000A /* MusicPlaylistBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlaylistBuilder.swift; sourceTree = "<group>"; };
+		A2000001000000000000000C /* PlaylistConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistConverter.swift; sourceTree = "<group>"; };
+		A20000010000000000000015 /* LocalMusicIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMusicIndex.swift; sourceTree = "<group>"; };
+		A20000010000000000000016 /* MusicTrackLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTrackLookup.swift; sourceTree = "<group>"; };
+		A2000001000000000000000D /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
+		A2000001000000000000000E /* TrackPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPreviewView.swift; sourceTree = "<group>"; };
+		A2000001000000000000000F /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		A20000010000000000000017 /* ConversionProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionProgress.swift; sourceTree = "<group>"; };
+		A20000010000000000000018 /* ConversionProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionProgressBarView.swift; sourceTree = "<group>"; };
+		A20000010000000000000010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000010000000000000011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000010000000000000012 /* DjayPlaylistBridge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DjayPlaylistBridge.entitlements; sourceTree = "<group>"; };
+		A20000010000000000000013 /* DjayPlaylistBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DjayPlaylistBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000020000000000000001 /* CsvParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvParserTests.swift; sourceTree = "<group>"; };
+		A20000020000000000000002 /* TrackResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResolverTests.swift; sourceTree = "<group>"; };
+		A20000020000000000000003 /* M3u8WriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3u8WriterTests.swift; sourceTree = "<group>"; };
+		A20000020000000000000004 /* DjayPlaylistBridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DjayPlaylistBridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A50000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50000020000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A60000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A60000010000000000000002 /* DjayPlaylistBridge */,
+				A60000020000000000000001 /* DjayPlaylistBridgeTests */,
+				A60000010000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A60000010000000000000002 /* DjayPlaylistBridge */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000001 /* DjayPlaylistBridgeApp.swift */,
+				A20000010000000000000002 /* AppModel.swift */,
+				A20000010000000000000003 /* ContentView.swift */,
+				A60000010000000000000004 /* Models */,
+				A60000010000000000000005 /* Services */,
+				A60000010000000000000006 /* Views */,
+				A20000010000000000000010 /* Assets.xcassets */,
+				A20000010000000000000011 /* Info.plist */,
+				A20000010000000000000012 /* DjayPlaylistBridge.entitlements */,
+			);
+			path = DjayPlaylistBridge;
+			sourceTree = "<group>";
+		};
+		A60000010000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000013 /* DjayPlaylistBridge.app */,
+				A20000020000000000000004 /* DjayPlaylistBridgeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60000010000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000004 /* DjayTrack.swift */,
+				A20000010000000000000005 /* ConversionResult.swift */,
+				A20000010000000000000017 /* ConversionProgress.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A60000010000000000000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000006 /* DurationParser.swift */,
+				A20000010000000000000007 /* DjayCsvParser.swift */,
+				A20000010000000000000008 /* TrackResolver.swift */,
+				A20000010000000000000009 /* M3u8Writer.swift */,
+				A2000001000000000000000A /* MusicPlaylistBuilder.swift */,
+				A2000001000000000000000C /* PlaylistConverter.swift */,
+				A20000010000000000000015 /* LocalMusicIndex.swift */,
+				A20000010000000000000016 /* MusicTrackLookup.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A60000010000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000000000000000D /* DropZoneView.swift */,
+				A2000001000000000000000E /* TrackPreviewView.swift */,
+				A2000001000000000000000F /* ResultsView.swift */,
+				A20000010000000000000018 /* ConversionProgressBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A60000020000000000000001 /* DjayPlaylistBridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A20000020000000000000001 /* CsvParserTests.swift */,
+				A20000020000000000000002 /* TrackResolverTests.swift */,
+				A20000020000000000000003 /* M3u8WriterTests.swift */,
+				A60000020000000000000002 /* fixtures */,
+			);
+			path = DjayPlaylistBridgeTests;
+			sourceTree = "<group>";
+		};
+		A60000020000000000000002 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A40000010000000000000001 /* DjayPlaylistBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000010000000000000002 /* Build configuration list for PBXNativeTarget "DjayPlaylistBridge" */;
+			buildPhases = (
+				A50000010000000000000002 /* Sources */,
+				A50000010000000000000001 /* Frameworks */,
+				A50000010000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DjayPlaylistBridge;
+			productName = DjayPlaylistBridge;
+			productReference = A20000010000000000000013 /* DjayPlaylistBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A40000020000000000000001 /* DjayPlaylistBridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000020000000000000002 /* Build configuration list for PBXNativeTarget "DjayPlaylistBridgeTests" */;
+			buildPhases = (
+				A50000020000000000000002 /* Sources */,
+				A50000020000000000000001 /* Frameworks */,
+				A50000020000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A70000020000000000000001 /* PBXTargetDependency */,
+			);
+			name = DjayPlaylistBridgeTests;
+			productName = DjayPlaylistBridgeTests;
+			productReference = A20000020000000000000004 /* DjayPlaylistBridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A30000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A40000010000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A40000020000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A40000010000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = A80000010000000000000001 /* Build configuration list for PBXProject "DjayPlaylistBridge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60000010000000000000001;
+			productRefGroup = A60000010000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A40000010000000000000001 /* DjayPlaylistBridge */,
+				A40000020000000000000001 /* DjayPlaylistBridgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A50000010000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50000020000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A50000010000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* DjayPlaylistBridgeApp.swift in Sources */,
+				A10000010000000000000002 /* AppModel.swift in Sources */,
+				A10000010000000000000003 /* ContentView.swift in Sources */,
+				A10000010000000000000004 /* DjayTrack.swift in Sources */,
+				A10000010000000000000005 /* ConversionResult.swift in Sources */,
+				A10000010000000000000006 /* DurationParser.swift in Sources */,
+				A10000010000000000000007 /* DjayCsvParser.swift in Sources */,
+				A10000010000000000000008 /* TrackResolver.swift in Sources */,
+				A10000010000000000000009 /* M3u8Writer.swift in Sources */,
+				A1000001000000000000000A /* MusicPlaylistBuilder.swift in Sources */,
+				A1000001000000000000000C /* PlaylistConverter.swift in Sources */,
+				A10000010000000000000012 /* LocalMusicIndex.swift in Sources */,
+				A10000010000000000000013 /* MusicTrackLookup.swift in Sources */,
+				A1000001000000000000000D /* DropZoneView.swift in Sources */,
+				A1000001000000000000000E /* TrackPreviewView.swift in Sources */,
+				A1000001000000000000000F /* ResultsView.swift in Sources */,
+				A10000010000000000000014 /* ConversionProgress.swift in Sources */,
+				A10000010000000000000015 /* ConversionProgressBarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50000020000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000020000000000000001 /* CsvParserTests.swift in Sources */,
+				A10000020000000000000002 /* TrackResolverTests.swift in Sources */,
+				A10000020000000000000003 /* M3u8WriterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A70000020000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A40000010000000000000001 /* DjayPlaylistBridge */;
+			targetProxy = A30000020000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A90000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A90000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A90000010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DjayPlaylistBridge/DjayPlaylistBridge.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DjayPlaylistBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djayplaylistbridge.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A90000010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DjayPlaylistBridge/DjayPlaylistBridge.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DjayPlaylistBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djayplaylistbridge.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A90000020000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djayplaylistbridge.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DjayPlaylistBridge.app/Contents/MacOS/DjayPlaylistBridge";
+			};
+			name = Debug;
+		};
+		A90000020000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djayplaylistbridge.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DjayPlaylistBridge.app/Contents/MacOS/DjayPlaylistBridge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80000010000000000000001 /* Build configuration list for PBXProject "DjayPlaylistBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000010000000000000001 /* Debug */,
+				A90000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000010000000000000002 /* Build configuration list for PBXNativeTarget "DjayPlaylistBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000010000000000000003 /* Debug */,
+				A90000010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000020000000000000002 /* Build configuration list for PBXNativeTarget "DjayPlaylistBridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000020000000000000001 /* Debug */,
+				A90000020000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A30000010000000000000001 /* Project object */;
+}

@@ -1,0 +1,3 @@
+Title,Artist,Album,Time,BPM,Key,URL
+"Track, With Comma","José García","Álbum Especial",5:01,110.0,Dm,file:///tmp/djay-test/jose-garcia.mp3
+"Normal Track","Normal Artist","Normal Album",2:30,100.0,Em,file:///tmp/djay-test/normal.mp3

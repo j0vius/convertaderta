@@ -1,0 +1,4 @@
+Title,Artist,Album,Time,BPM,Key,URL
+"Local Track","Local Artist","Local Album",3:00,125.0,Am,file:///tmp/djay-test/local.wav
+"Streaming Track","Stream Artist","Stream Album",4:00,130.0,Bm,apple-music://track/12345
+"Missing Track","Missing Artist","Missing Album",2:45,115.0,Gm,file:///tmp/djay-test/does-not-exist.mp3
